@@ -8,6 +8,12 @@ body
     font-family: 'Sarabun', sans-serif;
 }
 
+.logo
+{
+    height: auto;
+    width: 600px;
+}
+
 table, td 
 {
     margin-left: auto;
