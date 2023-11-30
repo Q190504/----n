@@ -1,0 +1,196 @@
+body
+{
+    background-image: url("../images/VSPaint-Main-page's-Background.png");
+    background-size: cover;
+    background-color: #fefdf8;
+    text-align: center;
+    color: #855FB0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.logo
+{
+    margin-top: 5%;
+}
+
+.site-title
+{
+    font-family: 'Young Serif', serif;
+    font-size: 90px;
+}
+
+.site-short-description
+{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.download a 
+{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #855FB0;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    will-change: transform;
+}
+
+.download a:disabled 
+{
+    pointer-events: none;
+}
+
+.download a:hover 
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.download a:active 
+{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.button, .drop-button
+{
+    margin-left: 23%;
+    align-items: center;
+    background-color: #855FB0;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fcf7f8;
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    height: 58px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:after, .drop-button:after
+{
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 58px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button:hover:after, .drop-button:hover:after
+{
+    transform: translate(0, 0);
+}
+
+.button:active, .drop-button:active
+{
+    background-color: #855FB0;
+    outline: 0;
+}
+
+.button:hover, .drop-button:hover
+{
+    outline: 0;
+}
+
+@media (min-width: 768px) 
+{
+    .button 
+    {
+        padding: 0 40px;
+    }
+}
+
+#link 
+{
+    list-style-type: none;
+    align-content: center;
+    width: 300px;
+    background: #fefefe;
+    margin: auto;
+    margin-top: 2%;
+    padding: 5px 20px 50px 50px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 5px;
+    font-size: 30px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    transition: all .5s;
+}
+
+#link li
+{
+    float: left;
+    width: 130px;
+}
+
+.buttonList 
+{
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown 
+{
+    position: relative;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: inherit;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display:block;}

@@ -1,0 +1,55 @@
+body
+{
+    background-image: url("../images/VSPaint-Reference-page's-Background.png");
+    background-size: cover;
+    background-color: #fefdf8;
+    text-align: center;
+    color: #855FB0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+table, td 
+{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 1%;
+}
+
+
+th, .group-of-feature
+{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #855FB0;
+    background-color: #d4bdee;
+    color:#000;
+    border-collapse: collapse;
+    font-weight: 1000;
+}
+
+th
+{
+    border-bottom-width: thick;
+}
+
+.group-of-feature
+{
+    border-top-width: thick;
+}
+
+.start-group
+{
+    border-top-width: thick; 
+}
+
+.icon
+{
+    width: 20px;
+}
+
+td:last-child 
+{
+    width: 60%;
+}
