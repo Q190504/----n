@@ -36,43 +36,16 @@
             <img src="images\linux-logo.png" height="20"/>
         </a>
     </div>
-    
 
     <div style="display: flex;">
-        <button onclick="showDonateDropDown" class="button" id="donate_block" title="Support us">Support Us</button>
-        <div id="donateDropdown">
-            <a id="donate_paypal" class="link" href="https://paypal.me/paulineqh" target="_black" rel="noopener">PayPal</a>
-            <a id="donate_momo" class="link" href="#">MoMo</a>      
+        <button onclick="showDonateDropDown" class="button" id="open_donate_dialog_button" title="Support us">Support Us</button>
+        <div id="qrImageDialog" class="dialog">
+            <button id="close_donate_dialog_button" autofocus>X</button>
+            <img src="images\bank-qr-code.jpg" alt="Bank account QR code"/>
         </div>
-        
         <a class="button" href="reference.html">Reference Page</a>
-
-
-    <!--
-    <script>
-        function ShowDonate()
-        {
-            document.querySelector('donate_block')
-        }
-    </script>
-    -->
-
-    <!-- MOMO QR
     </div>
-
-    <div id="momo_modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">x</span>
-                <h3 class="modal_header_text">Bạn hãy quét mã QR bên dưới bằng app MoMo</h3>
-            </div>
-        <div class="modal-body">
-            
-            <img src="images\momo-qr-code.png">
-        </div>
-        </div>
-    </div>
-    -->
+    
 </body>
 <script src='js\script.js'></script>
 </html>

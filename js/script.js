@@ -1,21 +1,16 @@
-function showDonateDropDown() 
+document.addEventListener('DOMContentLoaded', function() 
 {
-  document.getElementById("donateDropdown").classList.toggle("show");
-}
+  const openDialogBtn = document.getElementById('open_donate_dialog_button');
+  const closeDialogBtn = document.getElementById('close_donate_dialog_button');
+  const imageDialog = document.getElementById('qrImageDialog');
 
-window.onclick = function(event) 
-{
-  if (!event.target.matches('.drop-button')) 
+  openDialogBtn.addEventListener('click', function() 
   {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) 
-    {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) 
-      {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+      imageDialog.style.display = 'block';
+  });
+
+  closeDialogBtn.addEventListener('click', function() 
+  {
+      imageDialog.style.display = 'none';
+  });
+});
