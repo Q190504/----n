@@ -74,9 +74,16 @@ body
     transform: translateY(0);
 }
 
+.bigbutton
+{
+    display: flex;
+    justify-content: center;
+}
+
 .button
 {
-    margin-left: 23%;
+    margin-left: 7%;
+    margin-right: 5%;
     align-items: center;
     background-color: #855FB0;
     border: 2px solid #111;
